@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*Part 1 navigation*/
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 25px;
+}
+
+nav ul li a{
+    float: right;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid white;
+    padding: 14px 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.explore{
+ position: relative; 
+}
+
+/*part 2 BANNER*/
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('PILIPINAS.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    transition: height 2s;
+}
+
+.hero:hover{
+    height: 80%;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 160px;
+    color: white;
+   /* -webkit-text-stroke: 1px white;
+    color: transparent;*/
+}
+
+.title:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+/*pART 3 ANIMATION*/
+
+div.videotext{
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(20px + 1vw);
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 0.15 gray;
+    user-select: none;
+    white-space: nowrap;
+    border: 0.5px solid white;
+    margin-top: 5px;
+}
+
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 5px;
+}
+
+.column{
+    flex: 1;
+    border: 0.10 solid white;
+    margin: 5px;
+    padding: 10px;
+    height: auto;
+    box-shadow: 3px 5px 5px white;
+    -webkit-box-shadow: 3px 5px 5px white;
+}
+
+.column iframe:hover{
+    transition: tranform 1s;
+    transform: scale(1.07);
+    opacity: 0.7;
+}
+
+@media screen and(max-width:960px){
+    .hero{
+        background:black;
+        height: 35%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        transition: height 2s;
+    }
+    .hero:hover{
+        height: 50%;
+    }
+}
